@@ -15,7 +15,7 @@
     <header>
         <h1>The Code Review</h1>
         <h2>Signup for our newsletter.</h2>
-        <p>Get the latest news on how your code is doing right in your inbox</p>
+        <p class="topp">Get the latest news on how your code is doing right in your inbox</p>
     </header>
 
     <hr class="top">
@@ -35,7 +35,7 @@
             <input type="text" id="city" name="user-city">
             <label for="state">State</label>
             <select name="state" id="state">
-                <option value="selected" selected="selected">Choose State</option>
+                <option value="">Choose State</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -94,18 +94,14 @@
         <hr>
         <fieldset class="newsletter">
             <legend>Newsletter</legend>
-            <input type="checkbox" id="html" name="html-news">
-            <label for="html">HTML News</label>
-            <input type="checkbox" id="css" name="css-news">
-            <label for="css">CSS News</label>
-            <input type="checkbox" id="java" name="javescript">
-            <label for="java">Javascript News</label>
+            <p class="lowp">Select the news letter you would like to receive.</p>
+            <input type="checkbox" id="html" name="html-news"><label for="html">HTML News</label><br>
+            <input type="checkbox" id="css" name="css-news"><label for="css">CSS News</label><br>
+            <input type="checkbox" id="java" name="javescript"><label for="java">Javascript News</label><br>
 
-            <label for="format">Newsletter Format</label>
-            <input type="radio" id="htm" name="htm-format">
-            <label for="htm">HTML</label>
-            <input type="radio" id="plain" name="plain-text">
-            <label for="plain">Plain text</label>
+            <label class="format">Newsletter Format</label>
+            <input type="radio" id="htm" name="format"><label for="htm">HTML</label><br>
+            <input type="radio" id="plain" name="format"><label for="plain">Plain text</label><br>
 
             <label for="idea">Other Topics you'd like to hear about</label>
             <textarea id="idea" name="user-idea"></textarea>

@@ -1,7 +1,7 @@
 * {box-sizing: border-box;}
 html{
     font-family: 'Kaisei Tokumin', serif;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 header {
@@ -24,15 +24,19 @@ h2 {
     font-size: 18px;
 }
 
-p {
-    color:lightgray;
+.topp {
+    color: gray;
     margin: 10px 8px;
 }
 
 .top {
+    height: 4px;
     border-top: 3px solid black;
     border-bottom: 1.5px solid black;
     margin: 20px 8px;
+    padding-top: 1px;
+    border-left: 0;
+    border-right: 0;
 }
 
 form,
@@ -41,12 +45,56 @@ footer {
 }
 
 label {
-    display: inline-block;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
- input[type='radio'] {
-     display: inline-block;
- }
 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    display: block;
+    background-color: lightgray;
+    border-radius: 5px;
+    border: 0;
+    width: calc(100vw - 16px);
+    height: 40px;
+}
+
+input[id="zip"] {
+    width: 50%;
+}
+
+option:disabled{
+    display: hidden;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+label[for="htm"],
+label[for="plain"],
+label[for="java"],
+label[for="css"],
+label[for="html"] {
+    display:inline;
+    margin-top: 16px;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+.lowp,
+.format,
+label[for="idea"],
+button {
+    margin-left: 15px;
+    margin-right: 8px;
+}
+
+.format {
+    margin-top: 25px;
+}
 
 legend {
     font-weight: bold;
@@ -54,11 +102,44 @@ legend {
     margin: 10px 0;
 }
 
-input {
-    display: block;
-}
 
 input[type="text"]::placeholder,
 input[type="email"]::placeholder {
     text-align: right;
+    padding-right: 15px;
+}
+
+textarea,
+button {
+    border: 0;
+    margin-right: 8px;
+    margin-left: 15px;
+    width: calc(100vw - 35px);
+    height: 100px;
+}
+
+button {
+    background-color: #4DBBB5;
+    margin-top: 20px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 250px;
+}
+
+input:focus,
+input:target,
+:focus-visible,
+option:target,
+option:focus {
+    border: 3px solid lightblue;
+    box-shadow: 0;
+    outline: 0;
 }
