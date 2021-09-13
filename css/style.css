@@ -174,10 +174,10 @@ option:focus {
         margin:30px auto 20px auto;
         max-width: 550px;
     }
-    form {
-        max-width: 550px;
-        margin-left: auto;
-        margin-right: auto;
+    
+    section {
+        display: flex;
+        justify-content: center;
     }
 
     input[type="text"],
@@ -187,14 +187,14 @@ option:focus {
     textarea,
     button  {
         max-width: 550px;
-        margin-left: auto;
-        margin-right: auto;
+        justify-self: center;
     }
 
     input[id="zip"] {
         width: 25%;
         display: inline-block;
         text-align: left;
+        align-items: center;
     }
     input[type="checkbox"],
     input[type="radio"],
