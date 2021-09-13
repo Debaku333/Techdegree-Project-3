@@ -24,15 +24,15 @@
         <fieldset>
             <legend>Contact Information</legend>
             <label for="name">Full Name</label>
-            <input type="text" id="name" name="full-name" placeholder="Required">
+            <input type="text" id="name" name="full-name" placeholder="Required" required>
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="user-email" placeholder="Required">
+            <input type="email" id="email" name="user-email" placeholder="Required" required>
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="user-phone">
+            <input type="tel" id="phone" name="user-phone" placeholder="(123)-555-5555">
             <label for="address">Street Address</label>
-            <input type="text" id="address" name="user-address">
+            <input type="text" id="address" name="user-address" placeholder="33 Candy Lane">
             <label for="city">City</label>
-            <input type="text" id="city" name="user-city">
+            <input type="text" id="city" name="user-city" placeholder="Waverly Place">
             <label for="state">State</label>
             <select name="state" id="state">
                 <option value="">Choose State</option>
@@ -89,7 +89,7 @@
                 <option value="WY">Wyoming</option>
             </select>
             <label for="zip">Zip Code</label>
-            <input type="text" id="zip" name="user-zip">
+            <input type="text" id="zip" name="user-zip" placeholder="12345">
         </fieldset>
         <hr>
         <fieldset class="newsletter">
@@ -104,7 +104,7 @@
             <input type="radio" id="plain" name="format"><label for="plain">Plain text</label><br>
 
             <label for="idea">Other Topics you'd like to hear about</label>
-            <textarea id="idea" name="user-idea"></textarea>
+            <textarea id="idea" name="user-idea" placeholder="Top 10 candies for web developers!"></textarea>
 
             <button type="submit">Sign Up</button>
         </fieldset>
