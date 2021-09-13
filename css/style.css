@@ -76,9 +76,6 @@ input[id="zip"] {
     width: 50%;
 }
 
-option:disabled{
-    display: hidden;
-}
 
 input[type="checkbox"],
 input[type="radio"],
@@ -161,7 +158,6 @@ input:target,
 option:target,
 option:focus {
     border: 3px solid #004378;
-    box-shadow: 0;
     outline: 0;
     height: 80px;
 }
@@ -175,7 +171,7 @@ option:focus {
         max-width: 550px;
     }
     
-    section {
+    main {
         display: flex;
         justify-content: center;
     }
