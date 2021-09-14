@@ -222,7 +222,6 @@ label[for="idea"] {
         width: 25%;
         display: inline-block;
         text-align: left;
-        align-items: left;
     }
     input[type="checkbox"],
     input[type="radio"],
