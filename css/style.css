@@ -9,8 +9,10 @@ body {
 }
 
 header {
-    margin: 0 auto;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 h1 {
@@ -20,6 +22,8 @@ h1 {
     font-size: 22px;
     color:white;
     font-weight: bold;
+    width: 100vw;
+    text-align: center;
 }
 
 h2 {
@@ -30,7 +34,8 @@ h2 {
 
 .topp {
     color: gray;
-    margin: 10px 8px;
+    margin: 10px 15px;
+    text-align: center;
 }
 
 .top {
@@ -54,7 +59,9 @@ label {
     margin-top: 10px;
 }
 
-input {
+input,
+textarea,
+select {
     transition: height 3s;
 }
 
@@ -151,15 +158,29 @@ footer {
     color: lightgray;
 }
 
-
-input:focus,
-input:target,
-:focus-visible,
-option:target,
-option:focus {
+input[type="tel"]:focus-visible,
+input[type="text"]:focus-visible,
+input[type="email"]:focus-visible,
+select:focus-visible {
     border: 3px solid #004378;
     outline: 0;
     height: 80px;
+}
+textarea:focus {
+    border: 3px solid #004378;
+    outline: 0;
+    height: 200px;
+}
+
+hr {
+    margin: 20px 0;;
+}
+legend {
+    margin: 20px 0;
+}
+
+label[for="idea"] {
+    margin: 30px 0 20px 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -176,21 +197,32 @@ option:focus {
         justify-content: center;
     }
 
+    fieldset {
+        max-width: 550px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    legend {
+        width: 550px;
+    }
+
     input[type="text"],
     input[type="email"],
     input[type="tel"],
-    select,
-    textarea,
-    button  {
-        max-width: 550px;
-        justify-self: center;
+    select {
+        display: inline-block;
+        max-width: 400px;
+        justify-self: right;
+        margin: 20px 0;
     }
 
     input[id="zip"] {
         width: 25%;
         display: inline-block;
         text-align: left;
-        align-items: center;
+        align-items: left;
     }
     input[type="checkbox"],
     input[type="radio"],
@@ -201,5 +233,43 @@ option:focus {
     textarea {
         margin-left: 0px;
     }
-    
+    label {
+        display: inline;
+    }
+
+    label[for="name"],
+    label[for="email"],
+    label[for="phone"],
+    label[for="address"],
+    label[for="city"],
+    label[for="state"],
+    label[for="zip"] {
+        width: 150px;
+        height: 40px;
+        display: inline-block;
+        margin: 20px 0;
+        padding-top: 10px;
+    }
+    label[for="htm"], 
+    label[for="plain"], 
+    label[for="java"], 
+    label[for="css"], 
+    label[for="html"],
+    .format {
+        width: 537px;
+    }
+    .lowp {
+        width: 550px;
+    }
+    textarea,
+    button {
+        width: 550px;
+    }
+    label[for="idea"] {
+        width: 350px;
+        margin: 20px 0;
+    }
+    hr {
+        margin: 40px 0;
+    }
 }
